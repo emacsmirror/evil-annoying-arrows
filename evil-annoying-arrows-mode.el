@@ -3,8 +3,9 @@
 ;; Copyright (C) 2011 Magnar Sveen
 
 ;; Author: Magnar Sveen <magnars@gmail.com>
-;; Modified for evil mode and maintained by Endre Bakken Stovner <endrebak elephant-trunk idi.ntnu.no> (github.com/endrebak)
+;; Maintainer: Endre Bakken Stovner <endrebak elephant-trunk idi.ntnu.no> (github.com/endrebak)
 ;; Keywords: learning
+;; Version: 0.01
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
