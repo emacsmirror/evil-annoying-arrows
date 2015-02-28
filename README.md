@@ -1,13 +1,17 @@
-# annoying-arrows-mode.el
+# evil-annoying-arrows-mode
 
-Entering annoying-arrows-mode makes emacs ring the bell in your face if you move
+Entering evil-annoying-arrows-mode makes evil-emacs ring the bell in your face if you move
 long distances in the buffer one char at a time.
 
-    ;; Annoying arrows mode
-    (require 'annoying-arrows-mode)
-    (global-annoying-arrows-mode)
+    ;; Evil annoying arrows mode
+    (require 'evil-annoying-arrows-mode)
+    (global-evil-annoying-arrows-mode)
 
-Set the `annoying-arrows-too-far-count' to adjust the length.
+Set the `evil-annoying-arrows-too-far-count' to adjust the length.
+
+## Original author
+
+* [Magnar Sveen](https://github.com/magnars)
 
 ## Contributors
 
