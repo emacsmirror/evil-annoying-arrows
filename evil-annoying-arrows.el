@@ -6,6 +6,7 @@
 ;; Maintainer: Endre Bakken Stovner <endrebak elephant-trunk idi.ntnu.no> (github.com/endrebak)
 ;; Keywords: learning
 ;; Version: 0.01
+;; Package-Requires: ((cl-lib "0.5"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -29,6 +30,8 @@
 
 ;; Code:
 
+(require 'cl-lib)
+
 (defvar evil-annoying-arrows-too-far-count 10
   "Number of repeated arrow presses before emacs gets annoyed.")
 
@@ -42,14 +45,14 @@
   "Defaults to two because first two keypresses registered as one for some reason.")
 
 (defun eaa--commands-with-shortcuts (cmds)
-  (remove-if (lambda (cmd)
+  (cl-remove-if (lambda (cmd)
                (and
                 (>= (length (substitute-command-keys (format "\\[%S]" cmd))) 3)
                 (string-equal
                  (substring (substitute-command-keys (format "\\[%S]" cmd)) 0 3)
                  "M-x"))) cmds))
 
-;; Since evil-commands sometimes call themselves recursively (evil-forward-char calls itself 2-3 times, for example) we need to ensure that the user actually pressed the keys for those commands several times. We do this by ensuring that the time between command calls is bigger than some threshold. Without this check, 3-4 calls of evil-forward char would be enough to trigger the bell with a too far count of 10.
+;; Since evil-commands sometimes call themselves recursively (evil-forward-char calls itself 2-3 times, for example) we need to ensure that the user actually pressed the keys for those commands several times. We do this by ensuring that the time between command calls is longer than some threshold. Without this check, 3-4 calls of evil-forward char would be enough to trigger the bell with a too far count of 10.
 (defun eaa--check-enough-time-passed (new-time)
   "Checks if the time between two commands is smaller than some threshold."
   (progn
