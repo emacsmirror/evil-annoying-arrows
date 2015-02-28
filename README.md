@@ -7,7 +7,7 @@ long distances in the buffer one char at a time.
     (require 'evil-annoying-arrows-mode)
     (global-evil-annoying-arrows-mode)
 
-Set the `evil-annoying-arrows-too-far-count' to adjust the length.
+Set the `evil-annoying-arrows-too-far-count` to adjust the length.
 
 ## Original author
 
