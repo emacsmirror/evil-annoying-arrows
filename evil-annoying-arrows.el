@@ -101,7 +101,6 @@
   "Evil-Annoying-Arrows emacs minor mode."
   nil "" nil)
 
-
 ;;;###autoload
 (define-globalized-minor-mode global-evil-annoying-arrows-mode
   evil-annoying-arrows-mode evil-annoying-arrows-mode)
