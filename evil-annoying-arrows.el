@@ -1,9 +1,9 @@
-;;; evil-annoying-arrows-mode.el --- Ring the bell if using arrows too much
+;;; evil-annoying-arrows.el --- Ring the bell if using arrows too much
 
 ;; Copyright (C) 2011 Magnar Sveen
 
 ;; Author: Magnar Sveen <magnars@gmail.com>
-;; Maintainer: Endre Bakken Stovner <endrebak elephant-trunk idi.ntnu.no> (github.com/endrebak)
+;; Maintainer: Endre Bakken Stovner <endrebak@idi.ntnu.no> (github.com/endrebak)
 ;; Keywords: learning
 ;; Version: 0.01
 ;; Package-Requires: ((cl-lib "0.5"))
