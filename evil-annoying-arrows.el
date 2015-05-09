@@ -119,5 +119,5 @@
                                      (memq cmd old-alts)) alternatives)
                         old-alts))))
 
-(provide 'evil-annoying-arrows-mode)
-;;; evil-annoying-arrows-mode.el ends here
+(provide 'evil-annoying-arrows)
+;;; evil-annoying-arrows.el ends here
